@@ -2,9 +2,6 @@
 
 let hrs = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
 
-
-
-
 function Store(name, minCustomer, maxCustomer, avgCookiePurchased){
   this.name = name;
   this.minCustomer = minCustomer;
@@ -70,7 +67,7 @@ function tableHeader(){
     myList.appendChild(tHeader);
   }
   let blankTotalSpace = document.createElement('td');
-  blankTotalSpace.textContent='Totals';
+  blankTotalSpace.textContent='Daily Location Total';
   myList.appendChild(blankTotalSpace);
 
 }
@@ -104,8 +101,6 @@ renderAll();
 // lima.render();
 
 
-
-
 // Store.prototype.generateCookies = function(){
 //   this.generateCookies =
 // }
@@ -113,7 +108,6 @@ renderAll();
 // Store.prototype.customersPerHr = function (){
 //   this.customersPerHr = return Math.floor(Math.random() * (this.maxCustomer - this.minCustomer + 1) + this.minCustomer);
 // }
-
 
 
 // let seattle = {
@@ -133,18 +127,18 @@ renderAll();
 //   customersPerHr: function(){
 //     return Math.floor(Math.random() * (this.maxCustomer - this.minCustomer + 1) + this.minCustomer);
 //   },
-  // render: function(){
-  //   let myList= document.getElementById('seattleSales');
-  //   let heading=document.getElementById('seattle');
-  //   heading.textContent=this.name;
-  //   for (let i = 0; i < hrs.length; i++){
-  //     let liElement = document.createElement('li');
-  //     liElement.textContent= `${hrs[i]}: ${this.cookiesPurchased[i]} cookies`;
-  //     myList.appendChild(liElement);
-  //   }
-  //   let liElement = document.createElement('li');
-  //   liElement.textContent= `Total: ${this.totalCookies} cookies`;
-  //   myList.appendChild(liElement);
+// render: function(){
+//   let myList= document.getElementById('seattleSales');
+//   let heading=document.getElementById('seattle');
+//   heading.textContent=this.name;
+//   for (let i = 0; i < hrs.length; i++){
+//     let liElement = document.createElement('li');
+//     liElement.textContent= `${hrs[i]}: ${this.cookiesPurchased[i]} cookies`;
+//     myList.appendChild(liElement);
+//   }
+//   let liElement = document.createElement('li');
+//   liElement.textContent= `Total: ${this.totalCookies} cookies`;
+//   myList.appendChild(liElement);
 // }
 // };
 
