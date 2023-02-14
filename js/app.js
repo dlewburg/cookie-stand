@@ -17,13 +17,13 @@ let seattle = {
       let cookieAmt = Math.floor(this.customersPerHr()*this.avgCookiePurchased);
       this.cookiesPurchased.push (cookieAmt);
       this.totalCookies += cookieAmt;
-      let liElem = document.createElement('li');
-      liElem.textContent= `${hrs[i]}: ${this.cookiesPurchased[i]} cookies`;
-      myList.appendChild(liElem);
+      let liElement = document.createElement('li');
+      liElement.textContent= `${hrs[i]}: ${this.cookiesPurchased[i]} cookies`;
+      myList.appendChild(liElement);
     }
-    let liElem = document.createElement('li');
-    liElem.textContent= `Total: ${this.totalCookies} cookies`;
-    myList.appendChild(liElem);
+    let liElement = document.createElement('li');
+    liElement.textContent= `Total: ${this.totalCookies} cookies`;
+    myList.appendChild(liElement);
   },
   customersPerHr: function(){
     return Math.floor(Math.random() * (this.maxCustomer - this.minCustomer + 1) + this.minCustomer);
@@ -47,13 +47,13 @@ let tokyo = {
       let cookieAmt = Math.floor(this.customersPerHr()*this.avgCookiePurchased);
       this.cookiesPurchased.push (cookieAmt);
       this.totalCookies += cookieAmt;
-      let liElem = document.createElement('li');
-      liElem.textContent= `${hrs[i]}: ${this.cookiesPurchased[i]} cookies`;
-      myList.appendChild(liElem);
+      let liElement = document.createElement('li');
+      liElement.textContent= `${hrs[i]}: ${this.cookiesPurchased[i]} cookies`;
+      myList.appendChild(liElement);
     }
-    let liElem = document.createElement('li');
-    liElem.textContent= `Total: ${this.totalCookies} cookies`;
-    myList.appendChild(liElem);
+    let liElement = document.createElement('li');
+    liElement.textContent= `Total: ${this.totalCookies} cookies`;
+    myList.appendChild(liElement);
   },
   customersPerHr: function(){
     return Math.floor(Math.random() * (this.maxCustomer - this.minCustomer + 1) + this.minCustomer);
@@ -77,13 +77,13 @@ let dubai = {
       let cookieAmt = Math.floor(this.customersPerHr()*this.avgCookiePurchased);
       this.cookiesPurchased.push (cookieAmt);
       this.totalCookies += cookieAmt;
-      let liElem = document.createElement('li');
-      liElem.textContent= `${hrs[i]}: ${this.cookiesPurchased[i]} cookies`;
-      myList.appendChild(liElem);
+      let liElement = document.createElement('li');
+      liElement.textContent= `${hrs[i]}: ${this.cookiesPurchased[i]} cookies`;
+      myList.appendChild(liElement);
     }
-    let liElem = document.createElement('li');
-    liElem.textContent= `Total: ${this.totalCookies} cookies`;
-    myList.appendChild(liElem);
+    let liElement = document.createElement('li');
+    liElement.textContent= `Total: ${this.totalCookies} cookies`;
+    myList.appendChild(liElement);
   },
   customersPerHr: function(){
     return Math.floor(Math.random() * (this.maxCustomer - this.minCustomer + 1) + this.minCustomer);
@@ -107,13 +107,13 @@ let paris = {
       let cookieAmt = Math.floor(this.customersPerHr()*this.avgCookiePurchased);
       this.cookiesPurchased.push (cookieAmt);
       this.totalCookies += cookieAmt;
-      let liElem = document.createElement('li');
-      liElem.textContent= `${hrs[i]}: ${this.cookiesPurchased[i]} cookies`;
-      myList.appendChild(liElem);
+      let liElement = document.createElement('li');
+      liElement.textContent= `${hrs[i]}: ${this.cookiesPurchased[i]} cookies`;
+      myList.appendChild(liElement);
     }
-    let liElem = document.createElement('li');
-    liElem.textContent= `Total: ${this.totalCookies} cookies`;
-    myList.appendChild(liElem);
+    let liElement = document.createElement('li');
+    liElement.textContent= `Total: ${this.totalCookies} cookies`;
+    myList.appendChild(liElement);
   },
   customersPerHr: function(){
     return Math.floor(Math.random() * (this.maxCustomer - this.minCustomer + 1) + this.minCustomer);
@@ -137,13 +137,13 @@ let lima = {
       let cookieAmt = Math.floor(this.customersPerHr()*this.avgCookiePurchased);
       this.cookiesPurchased.push (cookieAmt);
       this.totalCookies += cookieAmt;
-      let liElem = document.createElement('li');
-      liElem.textContent= `${hrs[i]}: ${this.cookiesPurchased[i]} cookies`;
-      myList.appendChild(liElem);
+      let liElement = document.createElement('li');
+      liElement.textContent= `${hrs[i]}: ${this.cookiesPurchased[i]} cookies`;
+      myList.appendChild(liElement);
     }
-    let liElem = document.createElement('li');
-    liElem.textContent= `Total: ${this.totalCookies} cookies`;
-    myList.appendChild(liElem);
+    let liElement = document.createElement('li');
+    liElement.textContent= `Total: ${this.totalCookies} cookies`;
+    myList.appendChild(liElement);
   },
   customersPerHr: function(){
     return Math.floor(Math.random() * (this.maxCustomer - this.minCustomer + 1) + this.minCustomer);
