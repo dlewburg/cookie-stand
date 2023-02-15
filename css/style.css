@@ -1,6 +1,6 @@
 #store-Sales {
   table-layout: auto;
-  
+  margin: 10px;
 }
 
 td, th, tr{
@@ -9,6 +9,7 @@ td, th, tr{
   border-bottom: 1px solid #ddd;
   border-top: 1px solid #ddd;
   border-right: 1px solid #ddd;
+  border-left: 1px solid #ddd;
   
   
 }

@@ -69,7 +69,7 @@ function tableHeader(){
     tHeader.textContent=hrs[i];
     tableHead.appendChild(tHeader);
   }
-  let blankTotalSpace = document.createElement('td');
+  let blankTotalSpace = document.createElement('th');
   blankTotalSpace.textContent='Daily Location Total';
   tableHead.appendChild(blankTotalSpace);
 
