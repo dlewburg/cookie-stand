@@ -1,3 +1,18 @@
-table {
-  border-style: solid, black;
+#store-Sales {
+  table-layout: auto;
+  
 }
+
+td, th, tr{
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+
+  border-right: 1px solid #ddd;
+  
+  
+}
+
+
+
+
