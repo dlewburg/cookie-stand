@@ -61,7 +61,7 @@ Store.prototype.render = function(){
 function tableHeader(){
   let tableHead = document.createElement('thead');
   myList.appendChild(tableHead);
-  let blankSpace = document.createElement('td');
+  let blankSpace = document.createElement('th');
   blankSpace.textContent='';
   tableHead.appendChild(blankSpace);
   for (let i = 0; i < hrs.length; i++){
@@ -81,7 +81,7 @@ function tableFooter(){
   let footRow = document.createElement('tr');
   tableFoot.appendChild(footRow);
   let blankSpace = document.createElement('td');
-  blankSpace.textContent='';
+  blankSpace.textContent='Totals';
   footRow.appendChild(blankSpace);
   let grandTotal = 0;
   for(let i = 0; i < hrs.length; i++){
