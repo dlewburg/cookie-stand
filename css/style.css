@@ -4,11 +4,13 @@
 body {
   font-family:Georgia, 'Times New Roman', Times, serif;
   background-color: #64494e;
+  margin: 1%;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Monoton', cursive;
   background-color: #ec8550;
+  padding: 5px;
 }
 
 header{
@@ -16,6 +18,7 @@ header{
   color: #64494e;
   position: relative; 
   text-align: center;
+  padding
 }
 
 .logo{
@@ -37,15 +40,22 @@ h1 {
 nav ul{
   display: flex;
   justify-content: space-around;
+  padding: 5px;
 }
 
 a:link{
   text-decoration: none;
 }
 
+/* main h2 {
+  height: 20px;
+  text-align: center;
+  padding: 15px;
+} */
 
 article p {
   color: #f6f8f7;
+  
 }
 
 
