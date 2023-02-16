@@ -25,7 +25,6 @@ Store.prototype.customersPerHr = function(){
   return Math.floor(Math.random() * (this.maxCustomer - this.minCustomer + 1) + this.minCustomer);
 };
 
-
 Store.prototype.generateCookies = function(){
   for (let i = 0; i < hrs.length; i++){
     let cookieAmt = Math.floor(this.customersPerHr()*this.avgCookiePurchased);
@@ -34,10 +33,7 @@ Store.prototype.generateCookies = function(){
   }
 };
 
-
-
 let myList= document.getElementById('store-Sales');
-
 let tableBody = document.createElement('tbody');
 myList.appendChild(tableBody);
 Store.prototype.render = function(){
@@ -101,6 +97,7 @@ function tableFooter(){
 }
 
 tableHeader();
+
 function renderAll(){
   for (let i = 0; i < cookieStore.length; i++){
     cookieStore[i].generateCookies();
@@ -110,6 +107,42 @@ function renderAll(){
 renderAll();
 
 tableFooter();
+
+
+//Form Manipulation
+
+// STEP 1: Grab element
+
+let salesForm = document.getElementById('sales-form');
+
+//STEP 3: Attach Event Listener
+function handleFormSubmit(event){
+  event.preventDefault();
+
+  let storeName = event.target.storeName.value;
+  let minCust = event.target.minCust.value;
+  let maxCust = event.target.maxCust.value;
+  let averageCookie = event.target.averageCookie.value;
+
+
+  // Create a NEW Store Construct
+
+  let newStore = new StoreLocation(storeName, minCust, maxCust, averageCookie);
+  cookieStore.push(newStore);
+
+  newStore.generateCookies();
+  newStore.render();
+
+  salesForm.reset();
+}
+
+// STEP 2: Define Handler
+salesForm.addEventListener ('submit', handleFormSubmit);
+
+
+
+
+
 //table footer that adds up totals for every location for the hour
 
 
