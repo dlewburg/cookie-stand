@@ -1,6 +1,20 @@
+/* index.html styling */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Monoton&family=Montserrat+Subrayada&display=swap');
+body {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Monoton', cursive;
+}
+
+
+/* sales.html styling */
+
 #store-Sales {
   table-layout: auto;
   margin: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 td, th, tr{
@@ -17,5 +31,4 @@ td, th, tr{
 th {
   border-style: none;  
 }
-
 
