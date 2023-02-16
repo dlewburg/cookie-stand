@@ -1,11 +1,88 @@
 /* index.html styling */
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
 body {
   font-family:Georgia, 'Times New Roman', Times, serif;
+  background-color: #64494e;
+  margin: 1%;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Monoton', cursive;
+  background-color: #ec8550;
+  padding: 5px;
+}
+
+header, footer{
+  background-color: #c5b1b4;
+  color: #64494e;
+  position: relative; 
+  text-align: center;
+}
+
+.logo, footer img{
+  height: 100px;
+  width: 300px;
+  opacity: 0.5;
+}
+
+h1 { 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4em;
+  background: none;
+  font-weight: bolder;
+}
+
+nav ul{
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+}
+
+a:link{
+  text-decoration: none;
+}
+
+/* main h2 {
+  height: 20px;
+  text-align: center;
+  padding: 15px;
+} */
+
+main h3 {
+  font-size: 2 em;
+  text-align: center;
+  padding: 15px;
+} 
+
+
+/* .seattle{
+  display:flex;
+  justify-content: space-between;
+} */
+
+/* section {
+  display: flex;
+  flex-wrap: wrap;
+} */
+
+article p {
+  color: #f6f8f7;
+  padding: 3px;
+}
+
+address {
+  color: #c5b1b4;
+  
+}
+
+figure img {
+  height: 25%;
+  width: 25%;
+  padding: 10px;
 }
 
 
@@ -15,6 +92,8 @@ h1, h2, h3, h4, h5, h6 {
   table-layout: auto;
   margin: 10px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #EC9B6F;
+  color: #F6F8F7;
 }
 
 td, th, tr{
