@@ -1,12 +1,53 @@
 /* index.html styling */
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
 body {
   font-family:Georgia, 'Times New Roman', Times, serif;
+  background-color: #64494e;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Monoton', cursive;
+  background-color: #ec8550;
 }
+
+header{
+  background-color: #c5b1b4;
+  color: #64494e;
+  position: relative; 
+  text-align: center;
+}
+
+.logo{
+  height: 100px;
+  width: 300px;
+  opacity: 0.5;
+}
+
+h1 { 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4em;
+  background: none;
+  font-weight: bolder;
+}
+
+nav ul{
+  display: flex;
+  justify-content: space-around;
+}
+
+a:link{
+  text-decoration: none;
+}
+
+
+article p {
+  color: #f6f8f7;
+}
+
 
 
 /* sales.html styling */
