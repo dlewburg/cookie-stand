@@ -53,15 +53,11 @@ a:link{
 } */
 
 main h3 {
-  height: 20px;
+  font-size: 2 em;
   text-align: center;
   padding: 15px;
 } 
 
-figure img {
-  height: 25%;
-  width: 25%;
-}
 
 /* .seattle{
   display:flex;
@@ -75,12 +71,19 @@ figure img {
 
 article p {
   color: #f6f8f7;
+  padding: 3px;
 }
 
 address {
-  color: #c5b1b4
+  color: #c5b1b4;
+  
 }
 
+figure img {
+  height: 25%;
+  width: 25%;
+  padding: 10px;
+}
 
 
 /* sales.html styling */
@@ -89,6 +92,8 @@ address {
   table-layout: auto;
   margin: 10px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #EC9B6F;
+  color: #F6F8F7;
 }
 
 td, th, tr{
