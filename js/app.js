@@ -19,8 +19,6 @@ new Store ('Dubai', 11, 38, 3.7);
 new Store ('Paris', 20, 38, 2.3);
 new Store ('Lima', 2, 16, 4.6);
 
-console.log(cookieStore);
-
 Store.prototype.customersPerHr = function(){
   return Math.floor(Math.random() * (this.maxCustomer - this.minCustomer + 1) + this.minCustomer);
 };
@@ -93,7 +91,6 @@ function tableFooter(){
   let cookieTotal = document.createElement('td');
   footRow.appendChild(cookieTotal);
   cookieTotal.textContent = grandTotal;
-  console.log(grandTotal);
 }
 
 tableHeader();
@@ -107,9 +104,6 @@ function renderAll(){
 renderAll();
 
 tableFooter();
-
-
-//Form Manipulation
 
 // STEP 1: Grab element
 
@@ -127,43 +121,34 @@ function handleFormSubmit(event){
 
   // Create a NEW Store Construct
 
-  let newStore = new StoreLocation(storeName, minCust, maxCust, averageCookie);
+  let newStore = new Store(storeName, minCust, maxCust, averageCookie);
   cookieStore.push(newStore);
 
   newStore.generateCookies();
   newStore.render();
 
   salesForm.reset();
+
+  console.log();
 }
 
 // STEP 2: Define Handler
 salesForm.addEventListener ('submit', handleFormSubmit);
 
-
-
-
-
-//table footer that adds up totals for every location for the hour
-
-
 // seattle.generateCookies();
 // seattle.render();
-
 
 // tokyo.generateCookies();
 // tokyo.render();
 
-
 // dubai.generateCookies();
 // dubai.render();
-
 
 // paris.generateCookies();
 // paris.render();
 
 // lima.generateCookies();
 // lima.render();
-
 
 // Store.prototype.generateCookies = function(){
 //   this.generateCookies =
@@ -172,7 +157,6 @@ salesForm.addEventListener ('submit', handleFormSubmit);
 // Store.prototype.customersPerHr = function (){
 //   this.customersPerHr = return Math.floor(Math.random() * (this.maxCustomer - this.minCustomer + 1) + this.minCustomer);
 // }
-
 
 // let seattle = {
 //   name: 'Seattle',
