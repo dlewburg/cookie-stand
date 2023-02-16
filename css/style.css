@@ -13,15 +13,14 @@ h1, h2, h3, h4, h5, h6 {
   padding: 5px;
 }
 
-header{
+header, footer{
   background-color: #c5b1b4;
   color: #64494e;
   position: relative; 
   text-align: center;
-  padding
 }
 
-.logo{
+.logo, footer img{
   height: 100px;
   width: 300px;
   opacity: 0.5;
@@ -53,9 +52,33 @@ a:link{
   padding: 15px;
 } */
 
+main h3 {
+  height: 20px;
+  text-align: center;
+  padding: 15px;
+} 
+
+figure img {
+  height: 25%;
+  width: 25%;
+}
+
+/* .seattle{
+  display:flex;
+  justify-content: space-between;
+} */
+
+/* section {
+  display: flex;
+  flex-wrap: wrap;
+} */
+
 article p {
   color: #f6f8f7;
-  
+}
+
+address {
+  color: #c5b1b4
 }
 
 
