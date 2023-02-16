@@ -7,7 +7,7 @@ Purpose of Lab
 ### Author
 
 Created By: Dasha Burgos  
-Assisted By: Audrey (Instructor); Tony (TA); Matt (TA);
+Assisted By: Audrey (Instructor); Tony (TA); Matt (TA); Justin(TA)
 
 ### Links and Resources
 
@@ -15,7 +15,13 @@ Assisted By: Audrey (Instructor); Tony (TA); Matt (TA);
 * [MDN-Math.Random](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random)
 * [CSS Table Formatting](https://www.w3schools.com/css/css_table.asp)
 * [Class 07 Demo - for Constructors and Prototypes](https://github.com/codefellows/seattle-code-201d97/blob/main/class-07/inclass-demo/js/app.js)
+* [CSS](https://www.w3schools.com/css/default.asp)
+* [Color Scheme Generator](http://colormind.io/bootstrap/)
 
 ### Lighthouse Accessibility Report
 
+![Lab08b Accessibility Report](img/lab08-accessibility.png)
+
 ### Reflections and Comments
+
+CSS is not applied as easily as it is in theory. the color scheme is nice but I need to work on applying everything better. CSS is my weakness.
