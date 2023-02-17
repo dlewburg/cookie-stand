@@ -18,6 +18,7 @@ header, footer{
   color: #64494e;
   position: relative; 
   text-align: center;
+  margin: 2em;
 }
 
 .logo, footer img{
@@ -46,29 +47,6 @@ a:link{
   text-decoration: none;
 }
 
-/* main h2 {
-  height: 20px;
-  text-align: center;
-  padding: 15px;
-} */
-
-main h3 {
-  font-size: 2 em;
-  text-align: center;
-  padding: 15px;
-} 
-
-
-/* .seattle{
-  display:flex;
-  justify-content: space-between;
-} */
-
-/* section {
-  display: flex;
-  flex-wrap: wrap;
-} */
-
 article p {
   color: #f6f8f7;
   padding: 3px;
@@ -90,10 +68,10 @@ figure img {
 
 #store-Sales {
   table-layout: auto;
-  margin: 10px;
+  padding: 10px
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: #EC9B6F;
-  color:#64494e;
+  color: #64494e;
 }
 
 td, th, tr{
@@ -103,8 +81,6 @@ td, th, tr{
   border-top: 1px solid #ddd;
   border-right: 1px solid #ddd;
   border-left: 1px solid #ddd;
-  
-  
 }
 
 th {
@@ -119,18 +95,23 @@ font-weight: bold;
 padding: 30px;
 font-size: 25px;
 background-color: #c5b1b4;
+margin-top: 30px;
+
 }
+
 fieldset{ 
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   gap: 15px;
 }
+
 label {
   font-size:25px;
   color: #ec8550; 
   text-shadow: #c5b1b4;
 }
+
 input{
   font-size: 20px;
   box-sizing: border-box;
