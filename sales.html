@@ -9,9 +9,44 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <a href="index.html">Home</a>
+  <header>
+    <h1>Salmon Cookies</h1>
+    <img class="logo" src="img/salmon.png" alt="Salmon with mouth slightly open.">
+  </nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+    </ul>
+  <nav>
+  </header>
 
-  <table id="store-Sales"></table>
+  <main>
+    <section>
+      <table id="store-Sales"></table>
+    </section>
+
+    <section>
+      <form id="sales-form">
+        <fieldset>
+          <legend>Add Store Data</legend>
+          <label for="storeName">Store Location: </label>
+          <input id="storeName" type="text" placeholder="i.e. Cleveland" name="storeName">
+    
+          <label for="minCust">Minimum Amount of Customers per Hour</label>
+          <input id="minCust" type="text" placeholder="i.e. 12" name="minCust">
+    
+          <label for="maxCust">Maximum Amount of Customers per Hour</label>
+          <input id="maxCust" type="text" placeholder="i.e. 45" name="maxCust">
+    
+          <label for="averageCookie">Average Number of Cookies Purchased per Customer</label>
+          <input id="averageCookie" type="text" placeholder="i.e. 3.3">
+    
+        </fieldset>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+    
+  </main>
+
   <!-- <h2 id="seattle"></h2>
     <ul id="seattleSales">
     </ul>
@@ -29,27 +64,12 @@
     </ul>
 
   <h2 id="lima"></h2>
-    <ul id="limaSales">
+  <ul id="limaSales">
     </ul> -->
-
-    <form id="sales-form">
-      <fieldset>
-        <legend>Add Store Data</legend>
-        <label for="storeName">Store Location: </label>
-        <input id="storeName" type="text" placeholder="i.e. Cleveland" name="storeName">
-
-        <label for="minCust">Minimum Amount of Customers per Hour</label>
-        <input id="minCust" type="text" placeholder="i.e. 12" name="minCust">
-
-        <label for="maxCust">Maximum Amount of Customers per Hour</label>
-        <input id="maxCust" type="text" placeholder="i.e. 45" name="maxCust">
-
-        <label for="averageCookie">Average Number of Cookies Purchased per Customer</label>
-        <input id="averageCookie" type="text" placeholder="i.e. 3.3">
-
-      </fieldset>
-      <button type="submit">Submit</button>
-    </form>
+    <footer>
+      <p>Created by: Dasha Burgos</p>
+      <img src="img/chinook.jpg" alt="Fish facing the left with mouth slightly open">
+    </footer>
   <script src="js/app.js"></script>
 </body>
 </html>

@@ -19,8 +19,6 @@ new Store ('Dubai', 11, 38, 3.7);
 new Store ('Paris', 20, 38, 2.3);
 new Store ('Lima', 2, 16, 4.6);
 
-console.log(cookieStore);
-
 Store.prototype.customersPerHr = function(){
   return Math.floor(Math.random() * (this.maxCustomer - this.minCustomer + 1) + this.minCustomer);
 };
@@ -76,7 +74,7 @@ function tableFooter(){
   myList.appendChild(tableFoot);
   let footRow = document.createElement('tr');
   tableFoot.appendChild(footRow);
-  let blankSpace = document.createElement('td');
+  let blankSpace = document.createElement('th');
   blankSpace.textContent='Totals';
   footRow.appendChild(blankSpace);
   let grandTotal = 0;
@@ -93,7 +91,6 @@ function tableFooter(){
   let cookieTotal = document.createElement('td');
   footRow.appendChild(cookieTotal);
   cookieTotal.textContent = grandTotal;
-  console.log(grandTotal);
 }
 
 tableHeader();
@@ -105,11 +102,7 @@ function renderAll(){
   }
 }
 renderAll();
-
 tableFooter();
-
-
-//Form Manipulation
 
 // STEP 1: Grab element
 
@@ -127,43 +120,36 @@ function handleFormSubmit(event){
 
   // Create a NEW Store Construct
 
-  let newStore = new StoreLocation(storeName, minCust, maxCust, averageCookie);
-  cookieStore.push(newStore);
+  let newStore = new Store(storeName, minCust, maxCust, averageCookie);
+  document.querySelector('tfoot').remove();
 
   newStore.generateCookies();
   newStore.render();
+  cookieStore.push(newStore);
+  tableFooter();
 
   salesForm.reset();
 }
 
 // STEP 2: Define Handler
 salesForm.addEventListener ('submit', handleFormSubmit);
-
-
-
-
-
-//table footer that adds up totals for every location for the hour
+console.log(cookieStore);
 
 
 // seattle.generateCookies();
 // seattle.render();
 
-
 // tokyo.generateCookies();
 // tokyo.render();
 
-
 // dubai.generateCookies();
 // dubai.render();
-
 
 // paris.generateCookies();
 // paris.render();
 
 // lima.generateCookies();
 // lima.render();
-
 
 // Store.prototype.generateCookies = function(){
 //   this.generateCookies =
@@ -172,7 +158,6 @@ salesForm.addEventListener ('submit', handleFormSubmit);
 // Store.prototype.customersPerHr = function (){
 //   this.customersPerHr = return Math.floor(Math.random() * (this.maxCustomer - this.minCustomer + 1) + this.minCustomer);
 // }
-
 
 // let seattle = {
 //   name: 'Seattle',
