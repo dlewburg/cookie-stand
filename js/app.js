@@ -74,7 +74,7 @@ function tableFooter(){
   myList.appendChild(tableFoot);
   let footRow = document.createElement('tr');
   tableFoot.appendChild(footRow);
-  let blankSpace = document.createElement('td');
+  let blankSpace = document.createElement('th');
   blankSpace.textContent='Totals';
   footRow.appendChild(blankSpace);
   let grandTotal = 0;
@@ -102,7 +102,6 @@ function renderAll(){
   }
 }
 renderAll();
-
 tableFooter();
 
 // STEP 1: Grab element
@@ -122,18 +121,20 @@ function handleFormSubmit(event){
   // Create a NEW Store Construct
 
   let newStore = new Store(storeName, minCust, maxCust, averageCookie);
-  cookieStore.push(newStore);
+  document.querySelector('tfoot').remove();
 
   newStore.generateCookies();
   newStore.render();
+  cookieStore.push(newStore);
+  tableFooter();
 
   salesForm.reset();
-
-  console.log();
 }
 
 // STEP 2: Define Handler
 salesForm.addEventListener ('submit', handleFormSubmit);
+console.log(cookieStore);
+
 
 // seattle.generateCookies();
 // seattle.render();

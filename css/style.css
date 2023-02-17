@@ -93,7 +93,7 @@ figure img {
   margin: 10px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: #EC9B6F;
-  color: #F6F8F7;
+  color:#64494e;
 }
 
 td, th, tr{
@@ -109,9 +109,49 @@ td, th, tr{
 
 th {
   border-style: none;  
+  font-weight: bold;
 }
 
+
+legend {
+text-align: center;
+font-weight: bold;
+padding: 30px;
+font-size: 25px;
+background-color: #c5b1b4;
+}
 fieldset{ 
   display: flex;
-  
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 15px;
+}
+label {
+  font-size:25px;
+  color: #ec8550; 
+  text-shadow: #c5b1b4;
+}
+input{
+  font-size: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 0 15px 4px #64494e;;
+  width: min-content;
+  border-radius: 10px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  color: #64494e;
+  font-weight: 600;
+  border-radius: 5px;
+  width: min-content;
+  background-color:#ec8550;
+  box-shadow: #EC9B6F;
+  margin: 15px;
+}
+
+button:hover {
+  background-color:#F6F8F7;
+  transition: 350ms;
 }
