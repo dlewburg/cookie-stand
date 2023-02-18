@@ -20,7 +20,9 @@ Assisted By: Audrey (Instructor); Tony (TA); Matt (TA); Justin(TA)
 
 ### Lighthouse Accessibility Report
 
-![Lab08b Accessibility Report](img/lab08-accessibility.png)
+![Home Page Accessibility Report](img/CookieStand-Access-Report-Home.png)
+
+![Sales Page Accessibility Report](img/CookieStand-Access-Report-Sales.png)
 
 ### Reflections and Comments
 

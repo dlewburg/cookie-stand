@@ -47,14 +47,32 @@ a:link{
   text-decoration: none;
 }
 
+h2{
+  font-size: 2em;
+  margin: 10px;
+  text-align: center;
+}
+
+aside p {
+  margin: 10px;
+  color: #f6f8f7;
+
+}
+
+h3{
+  font-size: 1.5em;
+  margin: 10px;
+}
+
 article p {
   color: #f6f8f7;
   padding: 3px;
+  margin: 10px;
 }
 
 address {
   color: #c5b1b4;
-  
+  margin: 10px;
 }
 
 figure img {
