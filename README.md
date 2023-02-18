@@ -7,7 +7,7 @@ Purpose of Lab
 ### Author
 
 Created By: Dasha Burgos  
-Assisted By: Audrey (Instructor); Tony (TA); Matt (TA); Justin(TA)
+Assisted By: Audrey (Instructor); Tony (TA); Matt (TA); Justin(TA), Reece(eventListener)
 
 ### Links and Resources
 
